@@ -28,6 +28,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const cors = require('./middlewares/cors');
+app.use(cors);
+
 
 app.all('/api/*', [require('./middlewares/validateRequest')]);
 app.use('/', routes);
