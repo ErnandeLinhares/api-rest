@@ -1,7 +1,7 @@
 'use strict';
 
 //conexao com BD 
-//require('./configs/db.js');
+require('./configs/db.js');
 
 const express = require('express');
 const path = require('path');
