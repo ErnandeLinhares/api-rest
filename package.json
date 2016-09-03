@@ -20,5 +20,10 @@
     "morgan": "~1.7.0",
     "node-uuid": "^1.4.7",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
