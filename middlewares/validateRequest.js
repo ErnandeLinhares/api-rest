@@ -23,7 +23,7 @@ module.exports = (req, res, next) => {
 			}
 
 		}catch(e){
-			res.status(500).json({"mensagem": "Ops, erro inesperado."});
+			res.status(500).json({"mensagem": e.message });
 		}
 
 	}else{

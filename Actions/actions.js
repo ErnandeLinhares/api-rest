@@ -38,11 +38,11 @@ Actions.remover = (req, res) => {
   });
 };
 Actions.cadastrar = (req, res) => {
-  const body = req.body;
-  const user = new usuarioModel(body);
-  user.save((err, data) => {
+  const body = req.body;  
+  usuarioModel.create(body,(err, data) => {
     callback(err, data, res);
   });
+
 };
 Actions.sigin = (req, res) => {  
   const body    = req.body;

@@ -32,10 +32,8 @@ const cors = require('./middlewares/cors');
 app.use(cors);
 
 
-app.all('/api/*', [require('./middlewares/validateRequest')]);
+//app.all('/api/*', [require('./middlewares/validateRequest')]);
 app.use('/', routes);
-app.use('/api/test', routes);
-app.use('/users', users);
 
 
 // 404 - Endpoint nao encontrado
