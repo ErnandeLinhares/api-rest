@@ -32,7 +32,7 @@ const cors = require('./middlewares/cors');
 app.use(cors);
 
 
-//app.all('/api/*', [require('./middlewares/validateRequest')]);
+app.all('/api/*', [require('./middlewares/validateRequest')]);
 app.use('/', routes);
 
 
