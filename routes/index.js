@@ -4,8 +4,9 @@ const router = require('./routerExpress');
 const auth = require('./auth');
 const Actions = require('../Actions/actions');
 
+// ROTAS INICIADAS COM /API NECESSITAM DO HEADER => Bearer  
 const Routes = [
-	{
+	  {
       	method: 'get',  path: '/api/usuario/listar', action: Actions.listar
     },
     {
@@ -20,8 +21,15 @@ const Routes = [
     {
 		method: 'post', path: '/api/usuario', action: Actions.cadastrar
     },
+    
     {
     	method: 'post', path: '/sigin', action: Actions.sigin
+    },
+    {
+    method: 'post', path: '/usuario', action: Actions.cadastrar
+    },
+    {
+      method: 'get', path: '/api/usuarioEToken/:id', action: Actions.consultarIdEToken
     }
 ];
 
