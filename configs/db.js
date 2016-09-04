@@ -1,7 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const dbURI = 'mongodb://localhost/api-rest-node';
+const dbURI = process.env.MONGODB_URI ||'mongodb://localhost/api-rest-node';
 
 mongoose.connect(dbURI);
 
