@@ -25,7 +25,6 @@ module.exports = function(grunt) {
 	        tasks: ['jshint']
 	    }
     });
-    
     //grunt.registerTask('test', ['jshint']);
 	//grunt.registerTask('default', ['jshint']);
 };

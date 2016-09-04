@@ -1,10 +1,32 @@
 'use strict';
 
-var express = require('express');
-var router = express.Router();
+const router = require('./routerExpress');
+const auth = require('./auth');
+const Actions = require('../Actions/actions');
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'API Rest' });
+const Routes = [
+	{
+      	method: 'get',  path: '/', action: Actions.listar
+    },
+    {
+      	method: 'get', path: '/:id', action: Actions.consultar
+    },
+    {
+      	method: 'put', path: '/:id', action: Actions.alterar
+    },
+    {
+      	method: 'delete', path: '/:id', action: Actions.remover
+    },
+    {
+		method: 'post', path: '/', action: Actions.cadastrar
+    },
+    {
+    	method: 'post', path: '/sigin', action: Actions.sigin
+    }
+];
+
+Routes.forEach( (route, index) => {
+    router[route.method](route.path, route.action);
 });
 
 module.exports = router;
