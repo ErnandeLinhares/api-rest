@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="app">
+
+<head>
+  <title>Titulo</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=yes" />
+
+<link rel="stylesheet" href="assets/libs/angular-loading-bar/loading-bar.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+  
+</head>
+
+<body>
+
+  <div class="container" ng-view></div>
+  <div ng-include="'partials/footer.html'"></div>
+
+  <script type="text/javascript" src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+  <script type="text/javascript" src="assets/libs/angular-route/angular-route.min.js"></script>
+
+  <script src="assets/libs/angular-loading-bar/loading-bar.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/factory.js"></script>
+  <script type="text/javascript" src="assets/js/controllers.js"></script>
+  <script type="text/javascript" src="assets/js/auth/auth.factory.js"></script>
+  <script type="text/javascript" src="assets/js/auth/auth.controller.js"></script>
+  
+</body>
+
+</html>

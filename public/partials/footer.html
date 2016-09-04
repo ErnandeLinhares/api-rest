@@ -1,0 +1,32 @@
+<footer ng-show="isLogged">
+	<!-- Modal -->
+     <div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <span class="ic icon-close" data-dismiss="modal" aria-label="Close" style="float: right;opacity: .6; cursor: pointer"></span>
+                     <h4 class="modal-title" id="appModalTitle"></h4>
+                 </div>
+                 <div class="modal-body" id="appModalBody"></div>
+                 <div class="modal-footer" id="appModalFooter"></div>
+             </div>
+         </div>
+     </div>
+
+
+</footer>
+
+
+<footer ng-show="!isLogged">
+    <div id="footer_login_fixed">
+        <ul class="navFooter">
+
+        </ul>
+
+        <ul class="navFooter footer_nav_right">
+
+        </ul>
+    </div>
+
+    <input type="hidden" id="msgRecuperarSenha" value="Informe o usuário para recuperação de senha">
+</footer>
