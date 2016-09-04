@@ -1,12 +1,16 @@
 {
   "name": "api-rest",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "start": "node ./bin/www"
   },
   "author": {
     "name": "Ernande Linhares",
     "email": "ernandeinf@yahoo.com.br"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/ErnandeLinhares/api-rest.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -26,5 +30,8 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "mocha": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
