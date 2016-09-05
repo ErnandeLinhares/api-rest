@@ -1,12 +1,9 @@
 #API RESTful Mongodb e Express
-
 ###Online em: https://rest-nodejs.herokuapp.com/
 ###Usuário demo: 
 #####E-mail: `teste@test.com.br`
 #####Senha: `teste`
-
 #Principais rotas
-===
 ##POST /usuario
 **Descricao**: Criar um usuário.  
 ###Modelo:
@@ -27,7 +24,6 @@
 **Descricao**: Busca um usuário cadastro através do id passado no path mais um header com o valor "Bearer {token}" onde {token} é o valor do token de autentificação.
 
 ##Rotas que necessitam do header `Bearer`
-===
 GET /api/usuario/listar - Lista todos os usuários.
 
 GET /api/usuario/:id - Busca um usuário de acordo com o id.
