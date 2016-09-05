@@ -86,7 +86,7 @@ Actions.sigin = (req, res) => {
               return res.status(401).json({"mensagem": "Usuário e/ou senha inválidos."});
             else{
               
-              const token      = criarToken(data);
+              const token      = criarToken({id: data.id, email: data.mail});
               const queryToken = {"id": data.id };
                 
               // Atualizar token 
